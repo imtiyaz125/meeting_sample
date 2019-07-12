@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+   <ScrollView  android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+        <include layout="@layout/layout_toolbar"
+                 android:id="@+id/toolbar"/>
+        <RelativeLayout
+                android:id="@+id/meetingDateRL"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/shape_rectangle"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/dp10"
+                android:orientation="horizontal"
+        >
+
+            <TextView
+                    style="@style/date_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5"
+                    android:layout_centerVertical="true"
+                    android:text="@string/meeting_date"
+                    android:id="@+id/meetingDateTv"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/md_grey_800"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_drop_down_arrow"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/startTimeRL"
+                android:layout_below="@+id/meetingDateRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/shape_rectangle"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/dp10"
+                android:orientation="horizontal"
+        >
+
+            <TextView
+                    style="@style/date_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp0"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/start_time"
+                    android:id="@+id/startTimeTv"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/md_grey_800"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_drop_down_arrow"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/endTimeRL"
+                android:layout_below="@+id/startTimeRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/shape_rectangle"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/dp10"
+                android:orientation="horizontal">
+
+            <TextView
+                    style="@style/date_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp0"
+                    android:padding="@dimen/dp5"
+                    android:layout_centerVertical="true"
+                    android:text="@string/end_time"
+                    android:id="@+id/endTimeTv"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/md_grey_800"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_drop_down_arrow"/>
+        </RelativeLayout>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_margin="@dimen/dp10"
+                android:hint="@string/description"
+                android:id="@+id/descEt"
+                android:gravity="start"
+                android:maxLines="6"
+                android:textSize="@dimen/sp16"
+                android:layout_below="@+id/endTimeRL"
+                android:background="@drawable/shape_rectangle_white"/>
+        <include layout="@layout/layout_button"
+                 android:layout_below="@+id/descEt"
+                 android:layout_margin="@dimen/dp10"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 android:layout_gravity="bottom"
+                 android:id="@+id/submitLyt"/>
+    </RelativeLayout>
+   </ScrollView>
+</layout>

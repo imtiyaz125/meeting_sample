@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:id="@+id/backIv"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/backIv"
+                android:textSize="@dimen/sp18"
+                android:id="@+id/backTv"
+                android:text="@string/prev"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/sp20"
+                android:text="@string/meeting_data"
+                android:id="@+id/meetingDateTv"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_next"
+                android:tint="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/nextIv"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:id="@+id/nextTv"
+                android:layout_toLeftOf="@id/nextIv"
+                android:textSize="@dimen/sp18"
+                android:text="@string/next"/>
+
+
+    </RelativeLayout>
+</layout>

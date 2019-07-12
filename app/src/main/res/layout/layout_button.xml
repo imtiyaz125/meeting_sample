@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dp10">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:paddingBottom="@dimen/dp0"
+            android:text="@string/schedule_company_meeting"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/sp20"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitTv"
+            android:textColor="@color/white"/>
+
+</LinearLayout>
